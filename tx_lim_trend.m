@@ -9,7 +9,7 @@ function [u,alpha,Xtr] = tx_lim_trend(X0,Xtau,tau0)
 % the imaginary part of DD(1) should be 0. Please do not use this code if
 % you find DD(1) a complex value.
 %
-% After getting Xtr in PC space, we (in Xu et al 2022) will get the spatial
+% After getting Xtr in PC space, we (in Xu et al 2022) obtained the spatial
 % temporal evolution of the trend by dot product of EOFs with Xtr. This
 % spatial temporal evolution is subtracted from original climate variables
 % for detrending.
