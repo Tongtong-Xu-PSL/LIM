@@ -51,7 +51,9 @@ end
 
 ## 3. Extracting long-term trend from LIM operator
 
-Several studies (e.g., Frankignoul et al 2017; Alexander et al 2022; Di Lorenzo et al 2023) have shown how the externally forced trend is captured by the least damped eigenmode of $\mathbf{L}$. 
+Several studies (e.g., Frankignoul et al 2017; Alexander et al 2022; Di Lorenzo et al 2023) have shown how the externally forced trend is captured by the least damped eigenmode of $\mathbf{L}$. This is done by performing an eigenanalysis on $\mathbf{L}$; that is,
+
+$\mathbf{LU} = \mathbf{U\Lambda}$ where $\mathbf{U}$ is the matrix of eigenvectors and $\mathbf{\Lambda}$ is the diagonal matrix of eigenvalues. $\mathbf{V}$, the eigenvectors of $\mathbf{L}$’s adjoint, is simply determined by $\mathbf{V}^H=\mathbf{U}^(-1)$, such that $\mathbf{L}^H \mathbf{V}=\mathbf{VΛ}^*, where $H$ is the conjugate transpose and $*$ is the conjugate. 
 
 ### References
 
