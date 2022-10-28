@@ -16,7 +16,7 @@ The LIM has been extensively used in predicting seasonal-to-interannual surface 
 
 ## 2. Solving LIM operator
 
-$\mathbf{x}(t)$ usually represents temporally evolving ampitudes of the leading Empirical Orthogonal Functions (EOFs).
+$\mathbf{x}(t)$ usually represents temporally evolving ampitudes of the leading Empirical Orthogonal Functions (EOFs) of climate variables (after removing climatology).
 
 $\mathbf{C}(0) = <\mathbf{x}(t)\mathbf{x}(t)^\mathrm{T}>$ is the auto-covariance matrix of $\mathbf{x}(t)$.
 
@@ -33,7 +33,7 @@ function [L, Q] = tx_lim_operator(X0,Xtau,tau0)
 % Output: L - LIM operator; Q - noise covariance
 % 
 % T. Xu
-% 2021
+% 2022
 %-----------------
 
 C0 = X0*X0'/(size(X0,2)-1);
@@ -51,6 +51,7 @@ end
 
 ## 3. Extracting long-term trend from LIM operator
 
+Several studies (e.g., Frankignoul et al 2017; Alexander et al 2022; Di Lorenzo et al 2023) have shown how the externally forced trend is captured by the least damped eigenmode of $\mathbf{L}$. 
 
 ### References
 
@@ -60,8 +61,14 @@ Penland C, Sardeshmukh PD. The Optimal-Growth of Tropical Sea-Surface Temperatur
 
 Alexander M.A, Matrosova L, Penland C, Scott J.D, Chang P. Forecasting Pacific SSTs: Linear inverse model predictions of the PDO. Journal of Climate 2008, 21(2): 385-402.
 
+Frankignoul C, Gastineau G, Kwon YO. Estimation of the SST Response to Anthropogenic and External Forcing and Its Impact on the Atlantic Multidecadal Oscillation and the Pacific Decadal Oscillation. Journal of Climate 2017, 30(24): 9871-9895.
+
 Newman M, Sardeshmukh PD. Are we near the predictability limit of tropical Indo-Pacific sea surface temperatures? Geophysical Research Letters 2017, 44(16): 8520-8529.
 
 Shin SI, Newman M. Seasonal Predictability of Global and North American Coastal Sea Surface Temperature and Height Anomalies. Geophysical Research Letters 2021, 48(10).
 
+Alexander MA, Shin S-I, Battisti DS. The Influence of the Trend, Basin Interactions, and Ocean Dynamics on Tropical Ocean Prediction. Geophysical Research Letters 2022, 49(3): e2021GL096120.
+
 Xu T, Newman M, Capotondi A, Stevenson S, Di Lorenzo E, Alexander M.A. An increase in marine heatwaves without significant changes in surface ocean temperature variability. Nature Communications 2022. In press.
+
+Lorenzo ED, Xu T, Zhao Y, Newman M, Capotondi A, Stevenson S, et al. Modes and Mechanisms of Pacific Decadal-Scale Variability. Annual Review of Marine Science 2023, 15(1): null.
