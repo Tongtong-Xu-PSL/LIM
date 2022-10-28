@@ -33,15 +33,6 @@ Vp = V(:,ploc);
 noise = Vp*diag(sqrt(Dp*dt));
 coef = eye(size(L,1))+L*dt;
 
-% optional stability test to help speed up the process
-option = 0;
-if option == 1
-    stabilityFlag = real(det((coef)^1e+20));
-    if isnan(stabilityFlag) || isinf(stabilityFlag)
-        error('The linear system is unstable! Decreasing dt may help!')
-    end
-end
-
 % initialization (discard the first 2000 years)
 subgroup = 20;
 X0 = zeros(size(X,1),subgroup);
@@ -61,17 +52,6 @@ for i = 1:subgroup
     end
 end
 
-% message for better understanding of the simulation system
-if any(real(eig(L))>0)
-    disp('Warning: Eigenvalues of L have positive real parts!')
-end
-
-if any(real(DD)<0) 
-    disp(['SUM over total: ',num2str(sum(real(DD)))])
-    disp(['SUM over non-negative: ',num2str(sum(real(DD(ploc))))])
-    disp('Warning: Eigenvalues of Q have negative real parts!')
-    disp(['Number of non-negative eigenvalues: ', num2str(length(ploc)),'/',num2str(length(DD))])
-end
 end
 
 function [X0,Xp] = tx_integration(X0,coef,noise,totalMon,dt)
