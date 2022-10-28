@@ -14,8 +14,7 @@ function [u,alpha,Xtr] = tx_lim_trend(X0,Xtau,tau0)
 % spatial temporal evolution is subtracted from original climate variables
 % for detrending.
 %
-% T. Xu
-% 2022
+% Xu et al 2022
 %-----------------
 
 % obtain LIM operator
