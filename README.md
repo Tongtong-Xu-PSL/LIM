@@ -1,6 +1,6 @@
 # Linear Inverse Model
 
-Some description
+#stochastic-simulation #multivariate-linear-regression
 
 ## 1. Introduction
 
