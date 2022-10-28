@@ -63,6 +63,8 @@ The least damped mode corresponds to the mode that decays the slowest, i.e., the
 
 The trend component in PC space is then determined by multiplying the trend spatial pattern with the temporally varying amplitudes, i.e., $\mathbf{x}_{TR}(t) = \mathbf{u}_i \mathbf{v}^{\mathrm{H}}_i \mathbf{x}(t) $.
 
+After getting $\mathbf{X}_{TR}(t)$ in PC space, we (in Xu et al 2022) obtained the spatial temporal evolution of the trend by dot product of EOFs with $\mathbf{X}_{TR}(t)$. This spatial temporal evolution is subtracted from original climate variables for detrending.
+
 ### References
 
 Penland C, Matrosova L. A Balance Condition for Stochastic Numerical-Models with Application to the El-Nino-Southern Oscillation. Journal of Climate 1994, 7(9): 1352-1372.
