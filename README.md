@@ -24,7 +24,7 @@ $\mathbf{C}(\tau_0) = <\mathbf{x}(t+\tau_0)\mathbf{x}(t)^\mathrm{T}>$ is the lag
 
 $\mathbf{G}(\tau_0) = \mathbf{C}(\tau_0)/\mathbf{C}(0)$ solves the Green function, which then gives us the LIM operator $\mathbf{L} = \log(\mathbf{G}(\tau_0))$.
 
-```
+```Matlab
 function [L, Q] = tx_lim_operator(X0,Xtau,tau0)
 ```
 
