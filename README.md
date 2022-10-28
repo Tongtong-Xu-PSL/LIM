@@ -24,7 +24,7 @@ $\mathbf{C}(\tau_0) = <\mathbf{x}(t+\tau_0)\mathbf{x}(t)^\mathrm{T}>$ is the lag
 
 $\mathbf{G}(\tau_0) = \mathbf{C}(\tau_0)/\mathbf{C}(0)$ solves the Green function, which then gives us the LIM operator $\mathbf{L} = \log(\mathbf{G}(\tau_0))$.
 
-The following MATLAB function can be used to solve the LIM operator. Note that it also provides the covariance of the noise $\mathbf{\xi(t)}$, whose role is going to be introduced in the following section.
+The following MATLAB function can be used to solve the LIM operator. Note that it also provides the covariance of the noise $\mathbf{\xi}(t)$, whose role is going to be introduced in the following section.
 
 ```Matlab
 function [L, Q] = tx_lim_operator(X0,Xtau,tau0)
@@ -48,6 +48,9 @@ Q = -1*(L*C0+C0*L');
 
 end
 ```
+
+## 3. Extracting long-term trend from LIM operator
+
 
 ### References
 
