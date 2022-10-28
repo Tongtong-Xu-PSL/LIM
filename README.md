@@ -24,7 +24,7 @@ $\mathbf{C}(\tau_0) = <\mathbf{x}(t+\tau_0)\mathbf{x}(t)^\mathrm{T}>$ is the lag
 
 $\mathbf{G}(\tau_0) = \mathbf{C}(\tau_0)/\mathbf{C}(0)$ solves the Green function, which then gives us the LIM operator $\mathbf{L} = \log(\mathbf{G}(\tau_0))$.
 
-The following MATLAB function can be used to solve the LIM operator. Note that it also provides the covariance of the noise $\mathbf{\xi}(t)$, whose role is going to be introduced in the following section.
+The following [MATLAB function](https://github.com/Tongtong-Xu-PSL/LIM/blob/main/tx_lim_operator.m) can be used to solve the LIM operator. Note that it also provides the covariance of the noise $\mathbf{\xi}(t)$, whose role is going to be introduced in the following section.
 
 ```Matlab
 function [L, Q] = tx_lim_operator(X0,Xtau,tau0)
@@ -53,7 +53,9 @@ end
 
 Several studies (e.g., Frankignoul et al 2017; Alexander et al 2022; Di Lorenzo et al 2023) have shown how the externally forced trend is captured by the least damped eigenmode of $\mathbf{L}$. This is done by performing an eigenanalysis on $\mathbf{L}$; that is,
 
-$\mathbf{LU} = \mathbf{U\Lambda}$ where $\mathbf{U}$ is the matrix of eigenvectors and $\mathbf{\Lambda}$ is the diagonal matrix of eigenvalues. $\mathbf{V}$, the eigenvectors of $\mathbf{L}$’s adjoint, is simply determined by $\mathbf{V}^\mathrm{H}=\mathbf{U}^{-1}$, such that $\mathbf{L}^\mathrm{H} \mathbf{V}=\mathbf{VΛ}^\*$, where $\mathrm{H}$ is the conjugate transpose and $*$ is the conjugate. Check this [Wolfram World page](https://mathworld.wolfram.com/Eigenvector.html) for useful information to understand the derivation.
+$\mathbf{LU} = \mathbf{U\Lambda}$ where $\mathbf{U}$ is the matrix of eigenvectors and $\mathbf{\Lambda}$ is the diagonal matrix of eigenvalues ($\lambda_i$). $\mathbf{V}$, the eigenvectors of $\mathbf{L}$’s adjoint, is simply determined by $\mathbf{V}^\mathrm{H}=\mathbf{U}^{-1}$, such that $\mathbf{L}^\mathrm{H} \mathbf{V}=\mathbf{VΛ}^\*$, where $\mathrm{H}$ is the conjugate transpose and $*$ is the conjugate. Check this [Wolfram World page](https://mathworld.wolfram.com/Eigenvector.html) for useful information to understand the derivation.
+
+The least damped mode corresponds to the mode that decays the slowest, i.e., the magnitude of $|\Re{\lambda_i|} is the smallest among all eigenvalues.
 
 ### References
 
