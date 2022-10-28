@@ -1,4 +1,4 @@
-# Linear Inverse Model
+# Linear Inverse Model Simulation
 
 #stochastic-simulation #multivariate-linear-regression
 
