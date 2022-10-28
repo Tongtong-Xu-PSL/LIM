@@ -12,7 +12,7 @@ $$
 
 where $\mathbf{x}(t)$ is the climate state, $\mathbf{L}$ is a linear dynamical operator, $\mathbf{\xi}$ is a vector of temporally white noise that may have spatial structure, and $t$ is time. Determining the system from covariances of climate variables results in a Linear Inverse Model (LIM; Penland & Sardeshmukh 1995).
 
-The LIM has been extensively used in predicting seasonal-to-interannual surface ocean conditions (e.g., Alexander et al 2008; Newman & Sardeshmukh 2017; Shin & Newman 2021). But it can also be run as a climate simulation model (Penland & Matrosova 1994). One recent application is Xu et al 2022. And this repository serves as a code source associated with Xu et al 2022.
+The LIM has been extensively used in predicting seasonal-to-interannual surface ocean conditions (e.g., Alexander et al 2008; Newman & Sardeshmukh 2017; Shin & Newman 2021). But it can also be run as a climate simulation model (Penland & Matrosova 1994). One recent application is Xu et al 2022. And this repository serves as a code source associated with Xu et al 2022. Codes are written in MATLAB.
 
 ## 2. Simulation
 
