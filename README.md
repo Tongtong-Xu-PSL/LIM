@@ -183,8 +183,6 @@ function [X0,Xp] = tx_integration(X0,coef,noise,totalMon,dt)
 Xp = [];
 g = size(X0,2);
 for i = 1:totalMon/dt
-    tx_disp_progress(i,totalMon/dt,10)
-    
     % random number generator
     rt = normrnd(0,1,size(noise,2),g);
     
@@ -204,6 +202,10 @@ end
 
 end
 ```
+
+## 5. Final Remarks
+
+The repository provides
 
 ### References
 
