@@ -20,9 +20,13 @@ $\mathbf{x}(t)$ usually represents temporally evolving ampitudes of the leading 
 
 $\mathbf{C}(0) = <\mathbf{x}(t)\mathbf{x}(t)^\mathrm{T}>$ is the auto-covariance matrix of $\mathbf{x}(t)$.
 
-$\mathbf{C}(\tau_0) = <\mathbf{x}(t+\tau_0)\mathbf{x}(t)^\mathrm{T}>$ is the lag-covariance matrix of $\mathbf{x}(t)$. $\tau_0$ is the lag between $t$ and $t+\tau_0$.
+$\mathbf{C}(\tau_0) = <\mathbf{x}(t+\tau_0)\mathbf{x}(t)^\mathrm{T}>$ is the lag-covariance matrix of $\mathbf{x}(t)$. $\tau_0$ is the training lag between $t$ and $t+\tau_0$.
 
-$\mathbf{G}(\tau_0) = \mathbf{C}(\tau_0)/\mathbf{C}(0)$ solves the Green function, which then gives us the LIM operator $\mathbf{L} = \log(\mathbf{G}(\tau_0))$
+$\mathbf{G}(\tau_0) = \mathbf{C}(\tau_0)/\mathbf{C}(0)$ solves the Green function, which then gives us the LIM operator $\mathbf{L} = \log(\mathbf{G}(\tau_0))$.
+
+```
+function [L, Q] = tx_lim_operator(X0,Xtau,tau0)
+```
 
 ### References
 
