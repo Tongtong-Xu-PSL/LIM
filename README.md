@@ -53,9 +53,9 @@ end
 
 Several studies (e.g., Frankignoul et al 2017; Alexander et al 2022; Di Lorenzo et al 2023) have shown how the externally forced trend is captured by the least damped eigenmode of $\mathbf{L}$. This is done by performing an eigenanalysis on $\mathbf{L}$; that is,
 
-$\mathbf{LU} = \mathbf{U\Lambda}$ where $\mathbf{U}$ is the matrix of eigenvectors ($\mathbf{u}_i$) and $\mathbf{\Lambda}$ is the diagonal matrix of eigenvalues ($\lambda_i$). $\mathbf{V}$, the eigenvectors of $\mathbf{L}$’s adjoint, is simply determined by $\mathbf{V}^\mathrm{H}=\mathbf{U}^{-1}$, such that $\mathbf{L}^\mathrm{H} \mathbf{V}=\mathbf{VΛ}^\*$, where $\mathrm{H}$ is the conjugate transpose and $*$ is the conjugate. Check this [Wolfram World page](https://mathworld.wolfram.com/Eigenvector.html) for useful information to understand the derivation.
+$\mathbf{LU} = \mathbf{U\Lambda}$ where $\mathbf{U}$ is the matrix of eigenvectors and $\mathbf{\Lambda}$ is the diagonal matrix of eigenvalues ($\lambda_i$). $\mathbf{V}$, the eigenvectors of $\mathbf{L}$’s adjoint, is simply determined by $\mathbf{V}^\mathrm{H}=\mathbf{U}^{-1}$, such that $\mathbf{L}^\mathrm{H} \mathbf{V}=\mathbf{VΛ}^\*$, where $\mathrm{H}$ is the conjugate transpose and $*$ is the conjugate. Check this [Wolfram World page](https://mathworld.wolfram.com/Eigenvector.html) for useful information to understand the derivation.
 
-The least damped mode corresponds to the mode that decays the slowest, i.e., the magnitude of $|\Re(\lambda_i)|$ is the smallest among all eigenvalues. The associated eigenvector $\mathbf{u}_i$ is the spatial pattern of the trend mode, and the time series of the trend mode is obtained by $\mathbf{v}^{\mathrm{H}}_i \mathbf{x}(t)$. 
+The least damped mode corresponds to the mode that decays the slowest, i.e., the magnitude of $|\Re(\lambda_i)|$ is the smallest among all eigenvalues. The associated eigenvector $\mathbf{u}_i$ is the spatial pattern of the trend mode, and the time series of the trend mode is obtained by $\mathbf{v}^{\mathrm{H}}_i \mathbf{x}(t)$. The trend component in PC space is then determined by multiplying the trend spatial pattern with the temporally varying amplitudes, i.e., $\mathbf{x}_{TR}(t)$.
 
 ### References
 
