@@ -205,7 +205,7 @@ end
 
 ## 5. Final Remarks
 
-The repository provides key elements of LIM analyses in Xu et al 2022: (1) solving LIM operator from observed climate variables, (2) identifying and extracting long-term trend from LIM without assuming whether the trend is linear or nonlinear, (3) conducting large ensembles of climate simulations using LIM. These above codes work under the assumption that the climate system is quasi-stationary and the constructed linear system is stable. For instance, [this lecture](http://courses.ece.ubc.ca/491m/lectures/Lecture05.pdf) has some discussion about the stability of linear systems, which could be useful.
+The repository provides key elements of LIM analyses in Xu et al 2022: (1) solving LIM operator from observed climate variables, (2) identifying and extracting long-term trend from LIM without assuming whether the trend is linear or nonlinear, (3) conducting large ensembles of climate simulations using LIM. These above codes work under the assumption that the climate system is quasi-stationary and the constructed linear system is stable. For example, [this lecture](http://courses.ece.ubc.ca/491m/lectures/Lecture05.pdf) has some discussion about the stability of linear systems, which could be useful.
 
 Stay tune for more updates!
 
