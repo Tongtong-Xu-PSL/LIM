@@ -2,9 +2,9 @@
 
 Some description
 
-## Introduction
+### 1. Introduction
 
-This is a linear stochastic muiltidimensional model.
+The time evolution of a climate state $\mathbf{x}$ may often be approximated by the stochastically forced linear dynamical system,
 
 See Penland 1995 for details.
 
