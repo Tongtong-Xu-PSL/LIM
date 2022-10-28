@@ -61,7 +61,7 @@ Check this [Wolfram World page](https://mathworld.wolfram.com/Eigenvector.html) 
 
 The least damped mode corresponds to the mode that decays the slowest, i.e., the magnitude of $|\Re(\lambda_i)|$ is the smallest among all eigenvalues. The associated eigenvector $\mathbf{u}_i$ is the spatial pattern of the trend mode, and the time series of the trend mode is obtained by $\mathbf{v}^{\mathrm{H}}_i \mathbf{x}(t)$.
 
-The trend component in PC space is then determined by multiplying the trend spatial pattern with the temporally varying amplitudes, i.e., $\mathbf{x}_{TR}(t)$.
+The trend component in PC space is then determined by multiplying the trend spatial pattern with the temporally varying amplitudes, i.e., $\mathbf{x}_{TR}(t) = \mathbf{u}_i \mathbf{v}^{\mathrm{H}}_i \mathbf{x}(t) $.
 
 ### References
 
