@@ -15,7 +15,7 @@ function [u,alpha,Xtr] = tx_lim_trend(X0,Xtau,tau0)
 % for detrending.
 %
 % T. Xu
-% 2021
+% 2022
 %-----------------
 
 % obtain LIM operator
