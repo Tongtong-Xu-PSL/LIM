@@ -14,9 +14,15 @@ where $\mathbf{x}(t)$ is the climate state, $\mathbf{L}$ is a linear dynamical o
 
 The LIM has been extensively used in predicting seasonal-to-interannual surface ocean conditions (e.g., Alexander et al 2008; Newman & Sardeshmukh 2017; Shin & Newman 2021). But it can also be run as a climate simulation model (Penland & Matrosova 1994). One recent application is Xu et al 2022. And this repository serves as a code source associated with Xu et al 2022. Codes are written in MATLAB.
 
-## 2. Simulation
+## 2. Solving LIM operator
 
-Some text; test
+$\mathbf{x}(t)$ usually represents temporally evolving ampitudes of the leading Empirical Orthogonal Functions (EOFs).
+
+$\mathbf{C}(0) = <\mathbf{x}(t)\mathbf{x}(t)^\mathrm{T}>$ is the auto-covariance matrix of $\mathbf{x}(t)$.
+
+$\mathbf{C}(\tau_0) = <\mathbf{x}(t+\tau_0)\mathbf{x}(t)^\mathrm{T}>$ is the lag-covariance matrix of $\mathbf{x}(t)$. $\tau_0$ is the lag between $t$ and $t+\tau_0$.
+
+$\mathbf{G}(\tau_0) = \mathbf{C}(\tau_0)/\mathbf{C}(0)$ solves the Green function, which then gives us the LIM operator $\mathbf{L} = \log(\mathbf{G}(\tau_0))$
 
 ### References
 
