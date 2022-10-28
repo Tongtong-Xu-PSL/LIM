@@ -113,6 +113,10 @@ Xtr = u*alpha;
 end
 ```
 
+## 4. Conducting LIM climate simulation
+
+
+
 ### References
 
 Penland C, Matrosova L. A Balance Condition for Stochastic Numerical-Models with Application to the El-Nino-Southern Oscillation. Journal of Climate 1994, 7(9): 1352-1372.
