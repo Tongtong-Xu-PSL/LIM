@@ -233,6 +233,6 @@ Shin SI, Newman M. Seasonal Predictability of Global and North American Coastal 
 
 Alexander MA, Shin S-I, Battisti DS. The Influence of the Trend, Basin Interactions, and Ocean Dynamics on Tropical Ocean Prediction. Geophysical Research Letters 2022, 49(3): e2021GL096120.
 
-Xu T, Newman M, Capotondi A, Stevenson S, Di Lorenzo E, Alexander M.A. An increase in marine heatwaves without significant changes in surface ocean temperature variability. Nature Communications 2022. In press.
+Xu T, Newman M, Capotondi A, Stevenson S, Di Lorenzo E, Alexander M.A. An increase in marine heatwaves without significant changes in surface ocean temperature variability. Nature Communications 2022. Accepted.
 
 Lorenzo ED, Xu T, Zhao Y, Newman M, Capotondi A, Stevenson S, et al. Modes and Mechanisms of Pacific Decadal-Scale Variability. Annual Review of Marine Science 2023, 15(1): null.
