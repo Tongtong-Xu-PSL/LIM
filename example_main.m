@@ -1,6 +1,8 @@
 % This script contains a list of tutorials that show the use of the LIM for different applications
 % We use SSTa over the Pacific as an example.
 
+%  TUTORIALS ARE NOT COMPLETE YET AND WILL BE POSTED AS THEY BECOME AVAILABLE -- WORK IN PROGRESS
+
 % Tutorial to be uploaded as they are completed
 
 % Tutorial #1
